@@ -1,4 +1,4 @@
-name: CICD Pipeline by srinivas
+name: CICD Pipeline by Srinivas Rampalli
 
 on:
   push:
