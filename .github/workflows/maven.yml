@@ -44,7 +44,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Build Docker Image
         run: |
-          docker build -t srinivasdocker1988/boardgame:latest .
+          docker build -t srinivasdocker1988/sriboardgame:latest .
       - name: Trivy Image Scan
         run: >
           trivy image --format table -o trivy-image-report.html
@@ -56,7 +56,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Push Docker Image
         run: |
-          docker push srinivasdocker1988/boardgame:latest
+          docker push srinivasdocker1988/sriboardgame:latest
       - name: Kubectl Action
         uses: tale/kubectl-action@v1
         with: 
